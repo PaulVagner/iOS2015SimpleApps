@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Calculator
+//  CalculatorRepeat
 //
 //  Created by Paul Vagner on 9/21/15.
 //  Copyright © 2015 Paul Vagner. All rights reserved.
@@ -19,17 +19,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-    @IBAction func doEquals(sender: AnyObject) {
-        print("=")
-    }
     @IBOutlet weak var displayLabel: UILabel!
     @IBAction func pressZero(sender: AnyObject) {displayLabel.text = "0"
     }
     @IBAction func pressOne(sender: AnyObject) {displayLabel.text = "1"
     }
-    @IBAction func pressTwo(sender: AnyObject) {displayLabel.text = "2"
+    @IBAction func presstwo(sender: AnyObject) {displayLabel.text = "2"
     }
     @IBAction func pressThree(sender: AnyObject) {displayLabel.text = "3"
     }
@@ -37,7 +32,7 @@ class ViewController: UIViewController {
     }
     @IBAction func pressFive(sender: AnyObject) {displayLabel.text = "5"
     }
-    @IBAction func pressSix(sender: AnyObject) {displayLabel.text = "6"
+    @IBAction func displaySix(sender: AnyObject) {displayLabel.text = "6"
     }
     @IBAction func pressSeven(sender: AnyObject) {displayLabel.text = "7"
     }
@@ -45,8 +40,10 @@ class ViewController: UIViewController {
     }
     @IBAction func pressNine(sender: AnyObject) {displayLabel.text = "9"
     }
+    @IBAction func doEquals(sender: AnyObject) {print("=")
+    }
+       
     
-    
-    
+
 }
 
