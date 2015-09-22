@@ -159,8 +159,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="aOH-xv-zxp"/>
                                         <exclude reference="9lN-8q-RWb"/>
+                                        <exclude reference="aOH-xv-zxp"/>
                                     </mask>
                                 </variation>
                                 <connections>
@@ -300,8 +300,8 @@
                                 </state>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="k07-3b-LQ8"/>
                                         <exclude reference="dRd-Mf-Xz5"/>
+                                        <exclude reference="k07-3b-LQ8"/>
                                     </mask>
                                 </variation>
                             </button>
