@@ -1,10 +1,13 @@
 //
-//  CalculatorFunctions.swift
-//  Calculator
+//  calculatorfunction.swift
+//  CalculatorRepeat
 //
 //  Created by Paul Vagner on 9/22/15.
 //  Copyright © 2015 Paul Vagner. All rights reserved.
 //
+
+import Foundation
+
 
 import Foundation
 
@@ -35,15 +38,4 @@ func calcNumbers (n1 n1: Double, n2: Double, operation: OperationType) -> Double
     }
     
 }
-
-
-//Normal:
-// change the sign +/-
-// remove decimal if .0
-
-//Medium:
-// add label on left side of the dsplay to show current operation  V
-
-//Hard: 
-//make decimal button work
 

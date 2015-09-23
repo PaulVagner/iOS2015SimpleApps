@@ -20,6 +20,9 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var displayLabel: UILabel!
+    @IBOutlet weak var displayOp: UILabel!
+    
+    
     
     @IBAction func numberPressed(button: UIButton) {
         
@@ -51,20 +54,37 @@ class ViewController: UIViewController {
         number2 = ""
         operation = nil
         displayLabel.text = "0"
+        displayOp.text = ""
         
+         
         
     }
 
     @IBAction func changeSign () {
+        let num1 = Double(number1)
+        
+        let num2 = Double(number2)
+        
+        let total = calcNumbers(n1: num1!, n2: num2!, operation: operation!)
+        
+        if total % 1 == 0 {
+            
+            
+        } else {
+            
+        }
+        
         
     }
 
     @IBAction func setOperation(button: UIButton){
-    
+       
+        
+        
      let opSign = button.titleLabel!.text!
     operation = OperationType(rawValue: opSign)
      
-        
+    displayOp.text = opSign 
     }
     
     @IBAction func runOperation () {
@@ -73,9 +93,11 @@ class ViewController: UIViewController {
     let num2 = Double(number2)
         
         let total = calcNumbers(n1: num1!, n2: num2!, operation: operation!)
-        
+    
+    
+
    number1 = "\(total)"
-           
+        
    displayLabel.text = "\(total)"
         
         
