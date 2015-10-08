@@ -38,11 +38,8 @@ class ViewController: UIViewController {
         
         
         for (r,row) in grid.enumerate() {
-            
             //            print(row)
-            
             for (c,_) in row.enumerate() {
-                
                 //                print(col)
                 
                 let x = c * 110
@@ -59,8 +56,8 @@ class ViewController: UIViewController {
                 button.addTarget(self, action: "spacePressed:", forControlEvents: .TouchUpInside)
                 view.addSubview(button)
                 
-
-            
+                
+                
             }
         }
         
@@ -177,10 +174,10 @@ class ViewController: UIViewController {
             
             
             isPlayer1Turn = !isPlayer1Turn
-
+            
             checkForWinner()
             
-//            print("button works")
+            //            print("button works")
             
             
         }
@@ -228,7 +225,7 @@ class ViewController: UIViewController {
                     
                     // winning condition
                     print("Player \(value1) Wins")
-                
+                    
                 } else {
                     print("all zeros")
                     
@@ -236,7 +233,7 @@ class ViewController: UIViewController {
                 
             } else {
                 
-            print("does not match")
+                print("does not match")
                 
                 
             }

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  tackytacktack
+//  HelloWorld
 //
-//  Created by Paul Vagner on 9/24/15.
+//  Created by Paul Vagner on 9/26/15.
 //  Copyright © 2015 Paul Vagner. All rights reserved.
 //
 
@@ -15,19 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
-        // print(window)
-        
-        window?.backgroundColor = UIColor.magentaColor()
-        
-        window?.makeKeyAndVisible()
-        
-        window?.rootViewController = ViewController()
         // Override point for customization after application launch.
-        
-        
         return true
     }
 
