@@ -249,10 +249,7 @@ class ViewController: UIViewController {
             
         }
         
-        // if stalemate is true ... do something
-        
-        
-        gameScoreLabel.text = "Score: P 1:\(player1Score) P 2:\(player2Score) S:\(stalemateScore)"
+                gameScoreLabel.text = "Score: P 1:\(player1Score) P 2:\(player2Score) S:\(stalemateScore)"
         
     }
     
