@@ -12,51 +12,33 @@ var number1 = ""
 var number2 = ""
 var operation: OperationType?
 
-
-
-
 class ViewController: UIViewController {
 
-
-    
     @IBOutlet weak var displayLabel: UILabel!
     @IBOutlet weak var displayOp: UILabel!
-    
-    
-    
     @IBAction func numberPressed(button: UIButton) {
         
         let num =  button.titleLabel!.text!
-        
-        
-        
         if operation == nil {
           
             number1 += num
             displayLabel.text = number1
-            
-            
             
         } else {
         
         number2 += num
         displayLabel.text = number2
             
-        
         }
-        
     }
     
     @IBAction func clear() {
-        
         
         number1 = ""
         number2 = ""
         operation = nil
         displayLabel.text = "0"
         displayOp.text = ""
-        
-         
         
     }
 
@@ -79,8 +61,6 @@ class ViewController: UIViewController {
 
     @IBAction func setOperation(button: UIButton){
        
-        
-        
      let opSign = button.titleLabel!.text!
     operation = OperationType(rawValue: opSign)
      
@@ -94,17 +74,12 @@ class ViewController: UIViewController {
         
         let total = calcNumbers(n1: num1!, n2: num2!, operation: operation!)
     
-    
-
    number1 = "\(total)"
         
    displayLabel.text = "\(total)"
         
         
     }
-    
-    
-    
     
 }
 

@@ -16,7 +16,7 @@ class Box {
 }
 
 var box1 = Box()
-var box2 = Box ()
+var box2 = Box()
 
 box1.changeSize(CGSize(width: 10, height: 10))
 box2.changeSize(CGSize(width: 20, height: 10))

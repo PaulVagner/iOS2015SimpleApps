@@ -159,15 +159,7 @@ class ViewController: UIViewController {
         
         if button.player == 0 {
             
-            //            if isPlayer1Turn {
-            //                button.player = 1
-            //
-            //            } else {
-            //                button.player = 2
-            //
-            //            }
-            //
-            button.player = isPlayer1Turn ? 1 : 2
+                     button.player = isPlayer1Turn ? 1 : 2
             
             grid[button.row][button.col] = isPlayer1Turn ? 1 : 2
             
@@ -186,18 +178,6 @@ class ViewController: UIViewController {
     }
     
     func checkForWinner(){
-        
-        
-        // r,c
-        
-        // row1 0,0 0,1 0,2
-        // row2 1,0 1,1 1,2
-        // row3 2,0 2,1 2,2
-        // col1 0,0 1,0 2,0
-        // col2 0,1 1,1 2,1
-        // col3 0,2 1,2 2,2
-        // dia1 0,0 1,1 2,2
-        // dia2 2,0 1,1 0,2
         
         let possibilities = [
             ((0,0),(0,1),(0,2)),
@@ -252,6 +232,7 @@ class TTTButton: UIButton {
     var col = 0
     
     var player = 0 {
+    
         
         
         
