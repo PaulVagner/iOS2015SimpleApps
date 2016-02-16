@@ -7,9 +7,7 @@ class ViewController: UIViewController {
     let cornerRadius: CGFloat = 10
     let borderWidth: CGFloat = 2
     let borderColor: CGColor = UIColor.blackColor().CGColor
-    
     let backgroundColor = UIColor(red:0.84, green:0.93, blue:0.67, alpha:1)
-    
     var grid = [[0,0,0],[0,0,0],[0,0,0]]
     
     //These "var"/s create VARIABLE objects
@@ -17,13 +15,14 @@ class ViewController: UIViewController {
     var player1Score = 0 //player 1 score object
     var player2Score = 0 //player 2 score object
     var stalemateScore = 0 //stalemate score object
-    
     var gameover = false
     
     //These "let"/s create the view labels and the "Game Reset" and "Score Reset" buttons and their attributes
+    
     //sets up the game labels
     let gameStatusLabel = UILabel(frame: CGRect(x: 0, y: 10, width: SCREEN_WIDTH, height: 50))
     let gameScoreLabel = UILabel(frame: CGRect(x: 0, y: SCREEN_HEIGHT - 120, width: SCREEN_WIDTH, height: 50))
+    
     //sets up the action buttons
     let gameResetButton = UIButton(frame: CGRect(x: 5, y: SCREEN_HEIGHT - 60, width: SCREEN_WIDTH / 2 - 10, height: 50))
     let scoreResetButton = UIButton(frame: CGRect(x: SCREEN_WIDTH / 2, y: SCREEN_HEIGHT - 60, width: SCREEN_WIDTH / 2 - 5, height: 50))
@@ -196,9 +195,7 @@ class ViewController: UIViewController {
                     print("does not match")
                 
                 }
-                
             }
-            
         }
         
         // check for no zeros
@@ -225,8 +222,6 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
     class TTTButton: UIButton { //This creates a new class of object/s
         let cornerRadius: CGFloat = 10
         let borderWidth: CGFloat = 2
@@ -241,7 +236,6 @@ class ViewController: UIViewController {
             
             didSet {
                 switch player {
-                    
                     
                 case 1: backgroundColor = UIColor(red:0.4, green:0.22, blue:0.94, alpha:1)
                 case 2: backgroundColor = UIColor(red:0.97, green:0.54, blue:0.88, alpha:1)
